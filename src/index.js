@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 const taskRouter = require('./routes/taskRoutes');
-app.use('/task', taskRouter);
+app.use('/tasks', taskRouter);
 
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
