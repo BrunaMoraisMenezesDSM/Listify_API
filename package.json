@@ -1,0 +1,17 @@
+{
+  "name": "listify_api",
+  "version": "1.0.0",
+  "description": "API desenvolvida em Node.js e MongoDB para gerenciamento de tarefas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "mongoose": "^7.6.3"
+  }
+}
