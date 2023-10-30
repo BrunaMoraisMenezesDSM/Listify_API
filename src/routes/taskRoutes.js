@@ -98,14 +98,14 @@ router.put('/:id', getTaskById, async (req, res) => {
         if (req.body.name != null) {
             res.task.name = req.body.name;
         }
-        if (req.body.date != null) {
-            res.task.date = req.body.date;
-        }
         if (req.body.description != null) {
             res.task.description = req.body.description;
         }
         if (req.body.priority != null) {
             res.task.priority = req.body.priority;
+        }
+        if (req.body.dateLimit != null) {
+            res.task.dateLimit = req.body.dateLimit;
         }
         if (req.body.status != null) {
             res.task.status = req.body.status;
