@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Task = require('../models/task');
-const moment = require('moment');
 
 // Rota para obter todas as tarefas
 router.get('/', async (req, res) => {
@@ -81,7 +80,6 @@ router.post('/', async (req, res) => {
             name: req.body.name,
             description: req.body.description,
             priority: req.body.priority,
-            createAt: moment(req.body.createAt).format('DD-MM-YYYY'),
             dateLimit: req.body.dateLimit,
             status: req.body.status,
         });
