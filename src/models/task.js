@@ -14,9 +14,6 @@ const taskSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  createAt: {
-    type: String
-  },
   dateLimit: {
     type: String,
     required: true
